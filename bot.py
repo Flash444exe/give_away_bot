@@ -199,4 +199,4 @@ async def member_join(interaction: discord.Interaction):
             await interaction.response.send_message("اسف لكن لا يمكنك استخدام هذا الامر الان", ephemeral=True)
         else:
             await interaction.response.send_message("اسف لكن انت لا تملك الصلاحية لأستخدام هذا الامر", ephemeral=True)       
-client.run("your_bot_token")
+client.run(process.env.token);
